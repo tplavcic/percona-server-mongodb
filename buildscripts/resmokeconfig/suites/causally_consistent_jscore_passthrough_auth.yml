@@ -206,8 +206,6 @@ executor:
         TestData: *TestData
         eval: jsTest.authenticate(db.getMongo())
       <<: *authOptions
-  - class: CleanEveryN
-    n: 20
   fixture:
     class: ShardedClusterFixture
     mongos_options:

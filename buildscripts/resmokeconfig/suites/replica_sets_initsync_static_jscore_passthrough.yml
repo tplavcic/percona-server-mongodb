@@ -21,8 +21,6 @@ executor:
   hooks:
   - class: IntermediateInitialSync
     n: *run_hook_interval
-  - class: CleanEveryN
-    n: *run_hook_interval
   fixture:
     class: ReplicaSetFixture
     mongod_options:

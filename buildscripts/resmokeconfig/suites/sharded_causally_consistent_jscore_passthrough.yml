@@ -202,8 +202,6 @@ executor:
       readMode: commands
   hooks:
   - class: ValidateCollections
-  - class: CleanEveryN
-    n: 20
   fixture:
     class: ShardedClusterFixture
     mongos_options:
